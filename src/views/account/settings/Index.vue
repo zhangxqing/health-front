@@ -69,7 +69,7 @@ export default {
       // cropper
       preview: {},
       option: {
-        img: '/avatar2.jpg',
+        img: '/avatar3.jpeg',
         info: true,
         size: 1,
         outputType: 'jpeg',
