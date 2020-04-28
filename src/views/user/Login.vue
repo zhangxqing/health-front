@@ -18,10 +18,10 @@
             <a-input
               size="large"
               type="text"
-              placeholder="账户: admin"
+              placeholder="请输入您的账号"
               v-decorator="[
                 'username',
-                {initialValue:'admin',rules: [{ required: true, message: '请输入帐户名或邮箱地址' }, { validator: handleUsernameOrEmail }], validateTrigger: 'change'}
+                {initialValue:'',rules: [{ required: true, message: '请输入帐户名或邮箱地址' }, { validator: handleUsernameOrEmail }], validateTrigger: 'change'}
               ]"
             >
               <a-icon slot="prefix" type="user" :style="{ color: 'rgba(0,0,0,.25)' }"/>
@@ -33,10 +33,10 @@
               size="large"
               type="password"
               autocomplete="false"
-              placeholder="密码: admin123"
+              placeholder="请输入您的密码"
               v-decorator="[
                 'password',
-                { initialValue:'admin123',rules: [{ required: true, message: '请输入密码' }], validateTrigger: 'blur'}
+                { initialValue:'',rules: [{ required: true, message: '请输入密码' }], validateTrigger: 'blur'}
               ]"
             >
               <a-icon slot="prefix" type="lock" :style="{ color: 'rgba(0,0,0,.25)' }"/>
@@ -287,6 +287,7 @@ export default {
       } else {
         this.requestFailed(res)
       }
+      this.requestFailed(res)
     },
     requestFailed (err) {
       this.isLoginError = true
