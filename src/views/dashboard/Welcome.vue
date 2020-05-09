@@ -21,11 +21,11 @@
     <div>
       <a-row :gutter="24">
         <a-col :xl="16" :lg="24" :md="24" :sm="24" :xs="24">
-          <a-card :bordered="false" title="RuoYi Cloud">
-            <p><strong>Spring Cloud</strong> 版本的若依,集成 <strong>Spring Cloud</strong> 的几大神兽: <strong>eureka,gateway,hystrix,feign,config... </strong>自定义token实现授权，直接存到redis</p>
+          <a-card :bordered="false" title="Health Cloud">
+            <p><strong>集成</strong> <strong>Spring Cloud</strong> 的几大神兽: <strong>eureka,gateway,hystrix,feign,config... </strong>自定义token实现授权，直接存到redis</p>
             <p><strong>文档地址 </strong><a href="https://github.com/zhangxqing/health-cloud" target="_blank">https://github.com/zhangxqing/health-cloud</a></p>
-            <p><strong>RuoYi Cloud</strong> 承诺永久开源，不会出商业版之类的东西</p>
-            <p><strong>RuoYi Cloud</strong> 是采用 MIT 许可的开源项目，使用完全免费。 但为了项目能够健康持续的发展下去，我们期望获得相应的资金支持。 你可以通过下列的方法来赞助我们的开发。</p>
+            <p><strong>Health Cloud</strong> 承诺永久开源，不会出商业版之类的东西</p>
+            <p><strong>Health Cloud</strong> 是采用 MIT 许可的开源项目，使用完全免费。 但为了项目能够健康持续的发展下去，我们期望获得相应的资金支持。 你可以通过下列的方法来赞助我们的开发。</p>
             <p><strong>Spring Cloud 从零开始免费教程 </strong><a href="https://github.com/zhangxqing/health-cloud" target="_blank">https://github.com/zhangxqing/health-cloud</a></p>
           </a-card>
 

@@ -11,12 +11,12 @@
       >
         <a-icon type="github" />
       </a>
-      <a href="https://gitee.com/zhangmrit/ruoyi-cloud">RuoYi Cloud</a>
-      <a href="https://gitee.com/zhangmrit/ruoyi-ant">RuoYi Ant</a>
+      <a href="https://github.com/zhangxqing/health-cloud">Health Cloud</a>
+      <a href="https://github.com/zhangxqing/health-front.git">Health Ant</a>
     </div>
     <div class="copyright">
       Copyright
-      <a-icon type="copyright" /> 2019 <span>RuoYi</span>
+      <a-icon type="copyright" /> 2019 <span>ZQ</span>
     </div>
   </div>
 </template>

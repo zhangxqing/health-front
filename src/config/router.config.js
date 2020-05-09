@@ -213,10 +213,6 @@ export const defaultRouterMap = [
     'icon': 'interaction',
     'children': [
       {
-        'title': '捐赠记录',
-        'key': 'donateList'
-      },
-      {
         'title': '米菲孕婴',
         'key': 'mifei'
       },

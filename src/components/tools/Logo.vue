@@ -18,7 +18,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'RUOYI ANT',
+      default: 'HEALTH CLOUD',
       required: false
     },
     showTitle: {

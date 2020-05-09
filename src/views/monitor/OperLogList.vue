@@ -40,11 +40,9 @@
       </a-form>
     </div>
     <div class="table-operator">
-      <a-popconfirm v-has="'monitor:operlog:remove'" title="确认清空吗？" @confirm="clean">
-        <a-icon slot="icon" type="question-circle-o" style="color: red" />
-        <a-button type="danger" ghost icon="close">清空</a-button>
+      <a-popconfirm v-has="'monitor:operlog:remove'" title="确认导出吗？" @confirm="exportExcel">
+        <a-button type="primary" icon="export">导出</a-button>
       </a-popconfirm>
-      <a-button type="primary" icon="export" @click="exportExcel()">导出</a-button>
       <a-dropdown v-has="'monitor:operlog:remove'" v-if="selectedRowKeys.length > 0">
         <a-button type="danger" icon="delete" @click="delByIds(selectedRowKeys)">删除</a-button>
       </a-dropdown>
@@ -177,12 +175,6 @@ export default {
 
   },
   async created () {
-    // 字典两种用法，各有优缺点
-    // operTypeMap = await getDictMap('sys_oper_type')
-    // this.operTypeMap = operTypeMap
-    // this.operTypeMap.forEach((value, key, mymap) => {
-    //   this.businessTypes.push({ code: key, label: value })
-    // })
     this.businessTypes = await getDictArray('sys_oper_type')
     this.businessTypes.map(d => {
       operTypeMap[d.dictValue] = { text: d.dictLabel }
@@ -201,6 +193,7 @@ export default {
     },
     exportExcel () {
       exportExcel(operLogExport, this.queryParam)
+      this.$message.success(`正在导出...`)
     },
     delByIds (ids) {
       this.$message.success(`你删除了` + ids)
@@ -216,10 +209,7 @@ export default {
     },
     clean () {
       this.$message.success(`你点击了清空`)
-      // cleanOperLog().then(res => {
-      //   this.handleOk()
-      // })
-    }
+    },
   },
   watch: {
     /*

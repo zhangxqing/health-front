@@ -36,10 +36,10 @@
       </a-form>
     </div>
     <div class="table-operator">
-      <a-popconfirm v-has="'monitor:logininfor:remove'" title="确认清空吗？" @confirm="clean">
-        <a-icon slot="icon" type="question-circle-o" style="color: red" />
-        <a-button type="danger" ghost icon="close">清空</a-button>
-      </a-popconfirm>
+      <!--<a-popconfirm v-has="'monitor:logininfor:remove'" title="确认清空吗？" @confirm="clean">-->
+        <!--<a-icon slot="icon" type="question-circle-o" style="color: red" />-->
+        <!--<a-button type="danger" ghost icon="close">清空</a-button>-->
+      <!--</a-popconfirm>-->
       <a-dropdown v-has="'monitor:logininfor:remove'" v-if="selectedRowKeys.length > 0">
         <a-button type="danger" icon="delete" @click="delByIds(selectedRowKeys)">删除</a-button>
       </a-dropdown>
@@ -185,9 +185,6 @@ export default {
     },
     clean () {
       this.$message.success(`你点击了清空`)
-      // cleanLoginLog().then(res => {
-      //   this.handleOk()
-      // })
     }
   },
   watch: {

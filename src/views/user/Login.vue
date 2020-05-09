@@ -278,16 +278,15 @@ export default {
     loginSuccess (res) {
       if (res.code === 0) {
         this.$router.push({ name: 'dashboard' }, () => {
-          this.$notification.success({
-            message: '欢迎',
-            description: `${timeFix()}，欢迎回来`
-          })
         })
         this.isLoginError = false
+        this.$notification.success({
+          message: '登陆成功',
+          description: `${timeFix()}，欢迎回来`
+        })
       } else {
         this.requestFailed(res)
       }
-      this.requestFailed(res)
     },
     requestFailed (err) {
       this.isLoginError = true
