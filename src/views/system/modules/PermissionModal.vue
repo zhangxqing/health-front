@@ -260,6 +260,7 @@ export default {
     loadPermissions () {
       getPermissions().then(res => {
         this.buildtree(res.rows, this.permissions, 0)
+        console.log(this.permissions)
       })
     },
     buildtree (list, arr, parentId) {

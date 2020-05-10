@@ -29,6 +29,7 @@
     <div class="table-operator">
       <a-button v-if="addEnable" type="primary" icon="plus" @click="$refs.modal.add()">新建</a-button>
     </div>
+
     <a-table
       ref="table"
       rowKey="deptId"

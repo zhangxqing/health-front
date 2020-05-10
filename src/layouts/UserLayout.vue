@@ -5,11 +5,8 @@
         <div class="header">
           <a href="/">
             <img src="~@/assets/logo.svg" class="logo" alt="logo">
-            <span class="title">RUOYI ANT</span>
+            <span class="title">HEALTH CLOUD</span>
           </a>
-        </div>
-        <div class="desc">
-          Ant Design 是西湖区最具影响力的 Web 设计规范
         </div>
       </div>
 
@@ -22,7 +19,7 @@
           <a href="_self">条款</a>
         </div>
         <div class="copyright">
-          Copyright &copy; 2019 ruoyi
+          Copyright &copy; 2020 healthcloud
         </div>
       </div>
     </div>

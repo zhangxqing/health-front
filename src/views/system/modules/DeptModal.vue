@@ -13,18 +13,16 @@
       </a-form-item>
 
       <a-form-item
-        :labelCol="
-          labelCol"
+        :labelCol="labelCol"
         :wrapperCol="wrapperCol"
-        label="上级部门"
-      >
+        label="上级部门">
+
         <a-tree-select
           v-decorator="['parentId', {initialValue:'0',rules: [{ required: true, message: '请选择上级部门' }]}]"
           :dropdownStyle="{ maxHeight: '400px', overflow: 'auto' }"
           :treeData="depts"
           placeholder="上级部门"
-          treeDefaultExpandAll
-        >
+          treeDefaultExpandAll>
         </a-tree-select>
       </a-form-item>
 
