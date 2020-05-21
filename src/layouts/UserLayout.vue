@@ -4,20 +4,17 @@
       <div class="top">
         <div class="header">
           <a href="/">
-            <img src="~@/assets/logo.svg" class="logo" alt="logo">
-            <span class="title">HEALTH CLOUD</span>
+            <img src="~@/assets/logo.png" class="logo" alt="logo">
+            <span class="title">健康后台系统</span>
           </a>
+        </div>
+        <div class="desc">
         </div>
       </div>
 
       <route-view></route-view>
 
       <div class="footer">
-        <div class="links">
-          <a href="_self">帮助</a>
-          <a href="_self">隐私</a>
-          <a href="_self">条款</a>
-        </div>
         <div class="copyright">
           Copyright &copy; 2020 healthcloud
         </div>
@@ -76,7 +73,7 @@ export default {
 
         .header {
           height: 44px;
-          line-height: 44px;
+          line-height: 130px;
 
           .badge {
             position: absolute;
@@ -90,25 +87,25 @@ export default {
 
           .logo {
             height: 44px;
-            vertical-align: top;
-            margin-right: 16px;
-            border-style: none;
+            margin-right: 55px;
+            line-height: 130px;
           }
 
           .title {
-            font-size: 33px;
+            font-size: 26px;
             color: rgba(0, 0, 0, .85);
             font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-            font-weight: 600;
+            font-weight: 200;
             position: relative;
             top: 2px;
+            left: -30px;
           }
         }
         .desc {
           font-size: 14px;
           color: rgba(0, 0, 0, 0.45);
           margin-top: 12px;
-          margin-bottom: 40px;
+          margin-bottom: 100px;
         }
       }
 

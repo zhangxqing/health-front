@@ -77,7 +77,6 @@ export default {
   },
   data () {
     return {
-      description: '菜单管理，只有menuKey(唯一)不为空才生效',
       visible: false,
       labelCol: {
         xs: { span: 24 },

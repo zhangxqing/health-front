@@ -18,7 +18,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'HEALTH CLOUD',
+      default: '健康后台系统',
       required: false
     },
     showTitle: {

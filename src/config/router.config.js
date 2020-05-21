@@ -205,22 +205,6 @@ export const defaultRouterMap = [
         ]
       }
     ]
-  },
-  {
-    'title': '其他',
-    'key': 'others',
-    'component': 'PageView',
-    'icon': 'interaction',
-    'children': [
-      {
-        'title': '米菲孕婴',
-        'key': 'mifei'
-      },
-      {
-        'title': '赣南脐橙',
-        'key': 'gnqc'
-      }
-    ]
   }
 ]
 
