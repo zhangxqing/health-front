@@ -51,11 +51,11 @@
       </span>
 
       <span slot="action" slot-scope="text, record">
-        <a v-if="editEnabel" @click="handleEdit(record)">编辑</a>
+        <a v-if="editEnabel" @click="handleEdit(record)"><a-icon type="edit" />编辑</a>
         <a-divider type="vertical" />
-        <a v-if="addEnable" @click="handleAdd(record.menuId+'')">新增</a>
+        <a v-if="addEnable" @click="handleAdd(record.menuId+'')"><a-icon type="plus" />新增</a>
         <a-divider type="vertical" />
-        <a v-if="removeEnable" @click="delById(record.menuId)">删除</a>
+        <a v-if="removeEnable" @click="delById(record.menuId)"><a-icon type="delete" />删除</a>
       </span>
     </a-table>
 
@@ -136,7 +136,7 @@ export default {
         },
         {
           title: '操作',
-          width: '150px',
+          width: '200px',
           dataIndex: 'action',
           scopedSlots: { customRender: 'action' }
         }

@@ -36,7 +36,10 @@
       :pagination="pagination"
       :loading="loading"
       :columns="columns"
-      :dataSource="data">
+      :align="center"
+      :dataSource="data"
+      v-if="!loading"
+      :defaultExpandAllRows="true">
 
       <span slot="menuType" slot-scope="text">
         {{ text | menuTypeFilter }}
@@ -111,7 +114,7 @@ export default {
         },
         {
           title: '操作',
-          width: '150px',
+          width: '160px',
           dataIndex: 'action',
           scopedSlots: { customRender: 'action' }
         }

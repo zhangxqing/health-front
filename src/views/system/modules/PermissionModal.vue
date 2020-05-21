@@ -60,7 +60,7 @@
       <a-form-item
         :labelCol="labelCol"
         :wrapperCol="wrapperCol"
-        v-if="menuType!='M'"
+        v-show="menuType!=='M'"
         label="权限标识"
       >
         <a-input
@@ -71,7 +71,7 @@
       <a-form-item
         :labelCol="labelCol"
         :wrapperCol="wrapperCol"
-        v-if="menuType!=='F'"
+        v-show="menuType!=='F'"
       >
         <span slot="label">组件
           <a-tooltip title="routerUtil中定义的组件或views文件下的路径">
@@ -86,7 +86,7 @@
       <a-form-item
         :labelCol="labelCol"
         :wrapperCol="wrapperCol"
-        v-if="menuType!=='F'"
+        v-show="menuType!=='F'"
         label="图标"
       >
         <a-input v-decorator="['icon',{rules: [{ required: false, message: '请选择图标' }]}]" ref="iconInput" @click="iconselect()" enterButton="选择图标" placeholder="选择图标">
@@ -98,7 +98,7 @@
       <a-form-item
         :labelCol="labelCol"
         :wrapperCol="wrapperCol"
-        v-if="menuType==='C'"
+        v-show="menuType==='C'"
         label="打开方式"
       >
         <a-select v-decorator="['target', {initialValue:'',rules: [{ required: false, message: '请选择打开方式' },{validator: validatePathTarget}]}]">
@@ -110,7 +110,7 @@
       <a-form-item
         :labelCol="labelCol"
         :wrapperCol="wrapperCol"
-        v-if="menuType==='C'"
+        v-show="menuType==='C'"
       >
         <span slot="label">链接地址
           <a-tooltip title="链接地址为外链时，打开方式必须为新窗口（antd限制）">
@@ -130,7 +130,7 @@
       <a-form-item
         :labelCol="labelCol"
         :wrapperCol="wrapperCol"
-        v-if="menuType!=='F'"
+        v-show="menuType!=='F'"
         label="重定向地址"
       >
         <a-input
@@ -141,23 +141,23 @@
       <a-form-item
         :labelCol="labelCol"
         :wrapperCol="wrapperCol"
-        v-if="menuType!=='F'"
+        v-show="menuType!=='F'"
         label="隐藏子菜单"
       >
-        <a-switch v-decorator="['hiddenChildren',{initialValue:false}]" />
+        <a-switch v-decorator="['hiddenChildren',{initialValue:false,valuePropName:'checked'}]" />
       </a-form-item>
 
       <a-form-item
         :labelCol="labelCol"
         :wrapperCol="wrapperCol"
-        v-if="menuType!=='F'"
+        v-show="menuType!=='F'"
       >
         <span slot="label">隐藏头部信息
           <a-tooltip title="隐藏 PageHeader 组件中的页面带的 面包屑和页面标题栏">
             <a-icon type="question-circle-o" />
           </a-tooltip>
         </span>
-        <a-switch v-decorator="['hiddenHeader',{initialValue:false}]" />
+        <a-switch v-decorator="['hiddenHeader',{initialValue:false,valuePropName:'checked'}]" />
       </a-form-item>
 
       <a-form-item
@@ -260,7 +260,6 @@ export default {
     loadPermissions () {
       getPermissions().then(res => {
         this.buildtree(res.rows, this.permissions, 0)
-        console.log(this.permissions)
       })
     },
     buildtree (list, arr, parentId) {
