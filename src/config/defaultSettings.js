@@ -22,7 +22,7 @@ export default {
   fixSiderbar: true, // sticky siderbar
   autoHideHeader: true, //  auto hide header
   colorWeak: false,
-  multiTab: false,
+  multiTab: true,
   production: process.env.NODE_ENV === 'production' && process.env.VUE_APP_PREVIEW !== 'true',
   // vue-ls options
   storageOptions: {
