@@ -1,11 +1,11 @@
-<template>
+<template xmlns:font-family="http://www.w3.org/1999/xhtml">
   <div id="userLayout" :class="['user-layout-wrapper', device]">
     <div class="container">
       <div class="top">
         <div class="header">
           <a href="/">
             <img src="~@/assets/logo.png" class="logo" alt="logo">
-            <span class="title">健康后台系统</span>
+            <span class="title">江 湖 录</span>
           </a>
         </div>
         <div class="desc">
@@ -59,7 +59,7 @@ export default {
     .container {
       width: 100%;
       min-height: 100%;
-      background: #f0f2f5 url(~@/assets/Confetti-Doodles.svg) no-repeat 50%;
+      background: #f0f2f5 url(~@/assets/logo2.jpg) no-repeat 50%;
       background-size: 100%;
       padding: 110px 0 144px;
       position: relative;
@@ -99,6 +99,7 @@ export default {
             position: relative;
             top: 2px;
             left: -30px;
+            font-style: italic;
           }
         }
         .desc {

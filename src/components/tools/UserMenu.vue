@@ -30,7 +30,7 @@
           <a-menu-item key="3">
             <a href="javascript:;" @click="handleLogout">
               <a-icon type="logout"/>
-              <span>退出登录</span>
+              <span>退出江湖录</span>
             </a>
           </a-menu-item>
         </a-menu>
@@ -59,7 +59,7 @@ export default {
     handleLogout () {
       this.$confirm({
         title: '提示',
-        content: '真的要注销登录吗 ?',
+        content: '真的要退出江湖录吗 ?',
         onOk: () => {
           return this.Logout({}).then(() => {
             setTimeout(() => {

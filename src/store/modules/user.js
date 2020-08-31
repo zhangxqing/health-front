@@ -70,7 +70,7 @@ const user = {
           }
           // console.log(result)
           commit('SET_NAME', { name: result.userName, welcome: welcome() })
-          commit('SET_AVATAR', result.avatar || '/avatar3.jpeg')
+          commit('SET_AVATAR', result.avatar || '/yangguo.jpg')
           resolve(response)
         }).catch(error => {
           reject(error)

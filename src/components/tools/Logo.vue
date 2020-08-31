@@ -18,7 +18,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Health',
+      default: '江湖录',
       required: false
     },
     showTitle: {
