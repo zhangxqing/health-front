@@ -5,7 +5,7 @@
         <div class="header">
           <a href="/">
             <img src="~@/assets/logo.png" class="logo" alt="logo">
-            <span class="title">江 湖 录</span>
+            <span class="title">人 人 康</span>
           </a>
         </div>
         <div class="desc">

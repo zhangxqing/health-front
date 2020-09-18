@@ -32,134 +32,134 @@ export const defaultRouterMap = [
     }
     ]
   },
-  {
-    'title': '表单页',
-    'key': 'form',
-    'component': 'PageView',
-    'icon': 'form',
-    'children': [
-      {
-        'title': '基础表单',
-        'key': 'baseForm',
-        'icon': ''
-      },
-      {
-        'title': '分步表单',
-        'key': 'stepForm',
-        'icon': ''
-      },
-      {
-        'title': '高级表单',
-        'key': 'advancedForm',
-        'icon': ''
-      },
-      {
-        'title': '富文本',
-        'key': 'editorForm',
-        'icon': ''
-      }
-    ]
-  },
-  {
-    'title': '列表页',
-    'key': 'list',
-    'component': 'PageView',
-    'icon': 'table',
-    'children': [{
-      'title': '查询表格',
-      'key': 'tableList',
-      'icon': ''
-    },
-    {
-      'title': '标准列表',
-      'key': 'standardList',
-      'icon': ''
-    },
-    {
-      'title': '卡片列表',
-      'key': 'cardList',
-      'icon': ''
-    },
-    {
-      'title': '搜索列表',
-      'redirect': '/list/search/article',
-      'key': 'search',
-      'children': [
-        {
-          'title': '搜索列表（文章）',
-          'key': 'article'
-        },
-        {
-          'title': '搜索列表（项目）',
-          'key': 'project'
-        },
-        {
-          'title': '搜索列表（应用）',
-          'key': 'application'
-        }
-      ]
-    }
-    ]
-  },
-  {
-    'title': '详情页',
-    'key': 'profile',
-    'component': 'RouteView',
-    'icon': 'profile',
-    'children': [{
-      'title': '基础详情页',
-      'key': 'profileBasic',
-      'icon': ''
-    },
-    {
-      'title': '高级详情页',
-      'key': 'profileAdvanced',
-      'icon': ''
-    }
-    ]
-  },
-  {
-    'title': '结果页',
-    'key': 'result',
-    'component': 'PageView',
-    'icon': 'check-circle-o',
-    'children': [{
-      'hiddenHeaderContent': true,
-      'title': '成功',
-      'key': 'resultSucc',
-      'icon': ''
-    },
-    {
-      'hiddenHeaderContent': true,
-      'title': '失败',
-      'key': 'resultErr',
-      'icon': ''
-    }
-    ]
-  },
-  {
-    'title': '异常页',
-    'key': 'exception',
-    'component': 'PageView',
-    'icon': 'warning',
-    'children': [
-      {
-        'hiddenHeaderContent': true,
-        'title': '403',
-        'key': 'error403'
-      },
-      {
-        'hiddenHeaderContent': true,
-        'title': '404',
-        'key': 'error404'
-      },
-      {
-        'hiddenHeaderContent': true,
-        'title': '500',
-        'key': 'error500'
-      }
-    ]
-  },
+  // {
+  //   'title': '表单页',
+  //   'key': 'form',
+  //   'component': 'PageView',
+  //   'icon': 'form',
+  //   'children': [
+  //     {
+  //       'title': '基础表单',
+  //       'key': 'baseForm',
+  //       'icon': ''
+  //     },
+  //     {
+  //       'title': '分步表单',
+  //       'key': 'stepForm',
+  //       'icon': ''
+  //     },
+  //     {
+  //       'title': '高级表单',
+  //       'key': 'advancedForm',
+  //       'icon': ''
+  //     },
+  //     {
+  //       'title': '富文本',
+  //       'key': 'editorForm',
+  //       'icon': ''
+  //     }
+  //   ]
+  // },
+  // {
+  //   'title': '列表页',
+  //   'key': 'list',
+  //   'component': 'PageView',
+  //   'icon': 'table',
+  //   'children': [{
+  //     'title': '查询表格',
+  //     'key': 'tableList',
+  //     'icon': ''
+  //   },
+  //   {
+  //     'title': '标准列表',
+  //     'key': 'standardList',
+  //     'icon': ''
+  //   },
+  //   {
+  //     'title': '卡片列表',
+  //     'key': 'cardList',
+  //     'icon': ''
+  //   },
+  //   {
+  //     'title': '搜索列表',
+  //     'redirect': '/list/search/article',
+  //     'key': 'search',
+  //     'children': [
+  //       {
+  //         'title': '搜索列表（文章）',
+  //         'key': 'article'
+  //       },
+  //       {
+  //         'title': '搜索列表（项目）',
+  //         'key': 'project'
+  //       },
+  //       {
+  //         'title': '搜索列表（应用）',
+  //         'key': 'application'
+  //       }
+  //     ]
+  //   }
+  //   ]
+  // },
+  // {
+  //   'title': '详情页',
+  //   'key': 'profile',
+  //   'component': 'RouteView',
+  //   'icon': 'profile',
+  //   'children': [{
+  //     'title': '基础详情页',
+  //     'key': 'profileBasic',
+  //     'icon': ''
+  //   },
+  //   {
+  //     'title': '高级详情页',
+  //     'key': 'profileAdvanced',
+  //     'icon': ''
+  //   }
+  //   ]
+  // },
+  // {
+  //   'title': '结果页',
+  //   'key': 'result',
+  //   'component': 'PageView',
+  //   'icon': 'check-circle-o',
+  //   'children': [{
+  //     'hiddenHeaderContent': true,
+  //     'title': '成功',
+  //     'key': 'resultSucc',
+  //     'icon': ''
+  //   },
+  //   {
+  //     'hiddenHeaderContent': true,
+  //     'title': '失败',
+  //     'key': 'resultErr',
+  //     'icon': ''
+  //   }
+  //   ]
+  // },
+  // {
+  //   'title': '异常页',
+  //   'key': 'exception',
+  //   'component': 'PageView',
+  //   'icon': 'warning',
+  //   'children': [
+  //     {
+  //       'hiddenHeaderContent': true,
+  //       'title': '403',
+  //       'key': 'error403'
+  //     },
+  //     {
+  //       'hiddenHeaderContent': true,
+  //       'title': '404',
+  //       'key': 'error404'
+  //     },
+  //     {
+  //       'hiddenHeaderContent': true,
+  //       'title': '500',
+  //       'key': 'error500'
+  //     }
+  //   ]
+  // },
   {
     'title': '个人页',
     'key': 'account',
