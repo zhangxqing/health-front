@@ -1,8 +1,4 @@
-<h1 align="center">RuoYi Ant</h1>
 
-文档：http://doc.rycloud.zmrit.com
-
-- 预览: http://ruoyi.ant.zmrit.com
 - 独有的字典用法
 - 独有的自定义默认排序
 - 监控类外链不宜对外暴露，可以设置白名单，故不在演示系统展示，可以参看 [ruoyi-ant redi监控](http://redis.ant.zmrit.com/)
@@ -14,7 +10,7 @@
 
 
 
-运行项目需要启动后端ruoyi-cloud，[传送门](https://github.com/zhangmrit/ruoyi-cloud)
+运行项目需要启动后端health-cloud，[传送门](https://github.com/zhangxqing/health-cloud)
 
 源码地址:
 - [Github](https://github.com/zhangmrit/ruoyi-ant)
@@ -59,9 +55,3 @@ yarn run build
 ```
 yarn run lint
 ```
-
-##  请作者喝杯咖啡或者建设演示服务器
-
-[捐赠记录](http://ruoyi.ant.zmrit.com/others/donateList)
-
-<img src="http://upload.ouliu.net/i/20191021180958e1ek5.png"/>
