@@ -32,8 +32,8 @@ Overview
 
 - 拉取项目代码
 ```bash
-git clone https://github.com/zhangmrit/ruoyi-ant.git
-cd ruoyi-ant
+git clone https://github.com/zhangxqing/health-front.git
+cd health-front
 ```
 
 - 安装依赖
